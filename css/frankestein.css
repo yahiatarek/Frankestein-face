@@ -1,0 +1,97 @@
+.hair {
+  height: 150px;
+  width: 600px;
+  transform: translateY(50%);
+  -webkit-transform: translateY(50%);
+  -moz-transform: translateY(50%);
+  -ms-transform: translateY(50%);
+  -o-transform: translateY(50%);
+  border-top-right-radius: 35%;
+  border-top-left-radius: 35%;
+  z-index: 1000;
+  position: relative;
+  background-color: black;
+}
+.flick-1 {
+  clip-path: polygon(0 0, 100% 0, 0 100%);
+  position: absolute;
+  width: 70px;
+  height: 50px;
+  position: absolute;
+  top: 150px;
+  background-color: black;
+}
+.flick-4 {
+  clip-path: polygon(100% 100%, 0 0, 100% 0);
+  position: absolute;
+  width: 70px;
+  height: 50px;
+  position: absolute;
+  top: 150px;
+  background-color: black;
+  /* left: 530px; */
+}
+.flick-3 {
+  clip-path: polygon(50% 100%, 0 0, 100% 0);
+  position: absolute;
+  width: 70px;
+  height: 50px;
+  position: absolute;
+  top: 150px;
+  background-color: black;
+  /* left: 530px; */
+}
+.face {
+  width: 500px;
+  height: 500px;
+  border-bottom-left-radius: 30%;
+  border-bottom-right-radius: 30%;
+  border-top-right-radius: 30%;
+  border-top-left-radius: 30%;
+  position: relative;
+}
+
+.horizontalLine {
+  width: 5px;
+  height: 200px;
+  transform: rotate(90deg);
+  -webkit-transform: rotate(90deg);
+  -moz-transform: rotate(90deg);
+  -ms-transform: rotate(90deg);
+  -o-transform: rotate(90deg);
+  position: relative;
+  background-color: #546837;
+}
+
+.eyeDiv {
+  background-color: grey;
+  height: 100px;
+  border-bottom-left-radius: 50%;
+  border-bottom-right-radius: 50%;
+}
+.firstEyeCol,
+.secondEyeCol {
+  border-bottom-right-radius: 50%;
+  border-bottom-left-radius: 50%;
+}
+.firstEyeBall,
+.secondEyeBall {
+  border-bottom-right-radius: 50%;
+  border-bottom-left-radius: 50%;
+  border-top-right-radius: 30%;
+  border-top-left-radius: 30%;
+}
+.mouth {
+  width: 200px;
+  height: 60px;
+  border-top: solid 6px #546837;
+  border-radius: 50%;
+}
+.mouth::after {
+  content: "";
+  width: 100px;
+  height: 60px;
+  border-top: solid 6px #546837;
+  border-radius: 50%;
+  margin: 30% 0 0 auto;
+}
